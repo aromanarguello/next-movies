@@ -3,11 +3,11 @@ import { ThemeProvider } from 'styled-components'
 
 const theme = {}
 
-interface ThemeProviderProps {
-  children: React.ReactElement
+interface IThemeProviderProps {
+  children: React.ReactElement;
 }
 
-const Theme = ({ children }: ThemeProviderProps) => (
+const Theme: React.SFC = ({ children }: IThemeProviderProps) => (
   <ThemeProvider theme={theme}>{children}</ThemeProvider>
 )
 
