@@ -1,19 +1,7 @@
 {
   "parser": "@typescript-eslint/parser",
-  "extends": [
-    "airbnb-typescript/base",
-    "plugin:react/recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended"
-  ],
-  "plugins": [
-    "react-hooks",
-    "@typescript-eslint",
-    "prettier",
-    "react",
-    "jsx-a11y",
-    "import"
-  ],
+  "extends": ["plugin:react/recommended", "plugin:@typescript-eslint"],
+  "plugins": ["react-hooks", "@typescript-eslint", "prettier", "react", "jsx-a11y", "import"],
   "parserOptions": {
     "ecmaVersion": 2018,
     "sourceType": "module",
@@ -30,7 +18,6 @@
       "semi": "off",
       "@typescript-eslint/indent": "off",
       "@typescript-eslint/semi": "off",
-      "@typescript-eslint/interface-name-prefix": "always",
       "@typescript-eslint/no-empty-interface": "off",
       "@typescript-eslint/explicit-function-return-type": [
         "error",
